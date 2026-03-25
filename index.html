@@ -8,12 +8,11 @@
 </head>
 
 <body id="light">
-    <button onclick="console.log('hi');document.body.id='dark';">
-        Dark mode
-    </button>
-    <button onclick="console.log('hi');document.body.id='light';">
-        Light mode
-    </button>
+    <button onclick="console.log('hi');document.body.id='dark';">Dark mode</button>
+    <button onclick="console.log('hi');document.body.id='light';">Light mode</button>
+    <script>
+        
+    </script>
     <h1>My first webpage</h1>
     <h2>Full-Stack Curriculum</h2>
     <img src="./images/Docter Lee smile.png" width="100">
@@ -40,6 +39,13 @@
         console.log(family)
         family.pet.happy = true;
         console.log(console)
+          let mood = prompt("How are you feeling?");
+          if(mood==="sleepy"){
+            alert("wake up");
+          } else{
+            alert("Oh! You are feeling " + mood+ ".");
+          };
+          console.log(mood);
     </script>
     <footer><p>2026/3/12 Rex</p></footer>
 </body>
