@@ -9,6 +9,7 @@
 
 <body id="dark">
     <button id="color-mode" onclick="ChangeColors()">light mode</button>
+    <button onclick="HowAreYou()">HowAreYou</button>
     <script>
         const ColorModeButton = document.querySelector('#color-mode');
         function ChangeColors(){
@@ -22,10 +23,21 @@
             ColorModeButton.textContent = 'light mode'
             }
         };
+                
+        function HowAreYou(){
+          let mood = prompt("How are you feeling?");
+          if(mood === "sleepy"){
+            alert("wake up");
+          } else{
+            alert("Oh! You are feeling " + mood+ ".");
+          };
+          console.log(mood);
+        };
     </script>
     <h1>My first webpage</h1>
     <h2>Full-Stack Curriculum</h2>
     <img src="./images/Docter Lee smile.png" width="100">
+    <img src="./images/dog1 no background.png" width="100">
     <p class="piglet meow">Learn the skills to become a full-stack developer</p>
 
     <h3>Introduction to HTML</h3>
@@ -57,7 +69,10 @@
           };
           console.log(mood);
     </script>
-    <footer><p>2026/3/12 Rex</p></footer>
+    <footer>
+      <p>2026/3/12 </p>
+      <p>Rex</p>
+    </footer>
 </body>
 
 </html>

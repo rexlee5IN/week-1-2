@@ -1,21 +1,26 @@
-#dark{
+#dark {
     border: 5px solid rgb(255, 255, 255);
     background-color: black;
     color: white;
 
-p {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255)
-}
-.meow{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding:30px;
-}
+    p {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255)
+    }
 
-h3 {
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255)
-}
+    .meow {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 30px;
+    }
+
+    h3 {
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255)
+    }
+    footer p{
+        margin: 0;
+        padding: 0;
+    }
 }
