@@ -2,77 +2,92 @@
 <html>
 
 <head>
-    <title>My first webpage</title>
-    <link rel="stylesheet" href="./styles/first.css">
-    <link rel="stylesheet" href="./styles/second.css">
+  <title>My first webpage</title>
+  <link rel="stylesheet" href="./styles/first.css">
+  <link rel="stylesheet" href="./styles/second.css">
 </head>
 
 <body id="dark">
-    <button id="color-mode" onclick="ChangeColors()">light mode</button>
-    <button onclick="HowAreYou()">HowAreYou</button>
-    <script>
-        const ColorModeButton = document.querySelector('#color-mode');
-        function ChangeColors(){
-            if(document.body.id === "dark"){
-            console.log("turn on light");
-            document.body.id='light';
-            ColorModeButton.textContent = 'dark mode'
-            }else{
-            console.log("turn on dark");
-            document.body.id='dark';  
-            ColorModeButton.textContent = 'light mode'
-            }
-        };
-                
-        function HowAreYou(){
-          let mood = prompt("How are you feeling?");
-          if(mood === "sleepy"){
-            alert("wake up");
-          } else{
-            alert("Oh! You are feeling " + mood+ ".");
-          };
-          console.log(mood);
-        };
-    </script>
-    <h1>My first webpage</h1>
-    <h2>Full-Stack Curriculum</h2>
-    <img src="./images/Docter Lee smile.png" width="100">
-    <img src="./images/dog1 no background.png" width="100">
-    <p class="piglet meow">Learn the skills to become a full-stack developer</p>
+  <button id="color-mode" onclick="ChangeColors()">light mode</button>
+  <button onclick="HowAreYou()">HowAreYou</button>
+  <script>
+    const ColorModeButton = document.querySelector('#color-mode');
+    function ChangeColors() {
+      if (document.body.id === "dark") {
+        console.log("turn on light");
+        document.body.id = 'light';
+        ColorModeButton.textContent = 'dark mode'
+      } else {
+        console.log("turn on dark");
+        document.body.id = 'dark';
+        ColorModeButton.textContent = 'light mode'
+      }
+    };
 
-    <h3>Introduction to HTML</h3>
-    <p>HTML represents the content and structure of a webpage</p>
+    function HowAreYou() {
+      let feelings = prompt("How are you feeling?");
+      respond(feelings);
+    };
+    function respond(mood) {
+      if (mood === "sleepy") {
+        alert("wake up");
+      } else {
+        alert("Oh! You are feeling " + mood + ".");
+      };
+    };
+    console.log("mood", typeof mood);
+    console.log("hi");
+    if (true) {
+      let insidelf = "yep";
+      console.log(typeof insidelf);
+    };
+    function AddTwo(Value) {
+      console.log(Value + 2);
+      return Value+2;
+    };
+    AddTwo(5);
+    let result = AddTwo(9);
+    console.log("result",result);
+  </script>
+  <h1>My first webpage</h1>
+  <h2>Full-Stack Curriculum</h2>
+  <img src="./images/Docter Lee smile.png" width="200">
+  <img src="./images/dog1 no background.png" width="100">
+  <p class="piglet meow">Learn the skills to become a full-stack developer</p>
 
-    <h3>Introduction to CSS</h3>
-    <p class="piglet meow">CSS is used to style a webpage</p>
-    <script>
-        let dog = {
-            name: "juju",
-            weight: 5,
-            happy: false,
-        };
-        console.log(dog.name)
-        let family = {
-            dad: "Ba",
-            mom: "Ma",
-            daughter: "Jie",
-            pet: dog,
-        };
-        console.log(family)
-        family.pet.happy = true;
-        console.log(console)
-          let mood = prompt("How are you feeling?");
-          if(mood === "sleepy"){
-            alert("wake up");
-          } else{
-            alert("Oh! You are feeling " + mood+ ".");
-          };
-          console.log(mood);
-    </script>
-    <footer>
-      <p>2026/3/12 </p>
-      <p>Rex</p>
-    </footer>
+  <h3>Introduction to HTML</h3>
+  <p>HTML represents the content and structure of a webpage</p>
+
+  <h3>Introduction to CSS</h3>
+  <p class="piglet meow">CSS is used to style a webpage</p>
+  <script>
+    let dog = {
+      name: "juju",
+      weight: 5,
+      happy: false,
+    };
+    console.log(dog.name)
+    let family = {
+      dad: "Ba",
+      mom: "Ma",
+      daughter: "Jie",
+      pet: dog,
+    };
+    console.log(family)
+    family.pet.happy = true;
+    console.log(console)
+    let mood = prompt("How are you feeling?");
+    if (mood === "sleepy") {
+      alert("wake up");
+    } else {
+      alert("Oh! You are feeling " + mood + ".");
+    };
+    console.log(mood);
+  </script>
+  <footer>
+    <p>2026/3/12 </p>
+    <p>Rex</p>
+  </footer>
 </body>
 
 </html>
